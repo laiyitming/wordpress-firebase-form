@@ -66,8 +66,8 @@ Wordpress plugins that enables you to create web form that  stores information i
   - On admin side, we have added page using whihc you can add new contest and see all participated users.
   - For added sample contests we have considered 
   - If you want to customize <select> dropdown using select2 lib to implement multiple select drop down you need to follow  two points below with some changes in form.js and form html
-  	1. Go to https://github.com/select2/select2/blob/master/LICENSE.md, find and download select2.min.js file then paste it in WordPress-Plugins/firebase-forms/js folder
-  	2. Go to https://github.com/select2/select2/blob/master/LICENSE.md, find and download select2.min.css file then paste it in WordPress-Plugins/firebase-forms/css folder
+  	1 Go to https://github.com/select2/select2/blob/master/LICENSE.md, find and download select2.min.js file then paste it in WordPress-Plugins/firebase-forms/js folder
+  	2 Go to https://github.com/select2/select2/blob/master/LICENSE.md, find and download select2.min.css file then paste it in WordPress-Plugins/firebase-forms/css folder
 	
 ## Workflow
   1. Add contest from admin, once you add contest you will get contest id whihc you need to configure in js file of form 
