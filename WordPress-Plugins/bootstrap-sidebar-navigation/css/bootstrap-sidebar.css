@@ -1,0 +1,184 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+i, span {
+    display: inline-block;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 190px;
+    max-width: 190px;
+    transition: all 0.3s;
+    float:left;
+}
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    text-align: left;
+    text-decoration:none;
+}
+#sidebar ul li{
+	list-style:none !important;	
+}	
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul li a i {
+    margin-right: 10px;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+    content: '\e259';
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
+}
+a[aria-expanded="true"]::before {
+    content: '\e260';
+}
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    #sidebar {
+        min-width: auto;
+        max-width: auto;
+        text-align: center;
+        margin-left: -60px !important ;
+    }
+    a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+        top: 0px;
+        bottom: 5px;
+        right: 0px;
+        -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+    #sidebar.active {
+        margin-left: 0 !important;
+    }
+
+    #sidebar .sidebar-header h3, #sidebar .CTAs {
+        display: none;
+    }
+
+    #sidebar .sidebar-header strong {
+        display: block;
+    }
+
+    #sidebar ul li a {
+        padding: 0px 10px 10px 10px;
+    }
+
+    #sidebar ul li a span {
+        font-size: 0.85em;
+    }
+    #sidebar ul li a i {
+        margin-right:  0;
+        display: block;
+    }
+
+    #sidebar ul ul a {
+        padding: 10px !important;
+    }
+
+    #sidebar ul li a i {
+        font-size: 1.3em;
+    }
+    #sidebar {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+    #sidebar .submenu li{
+    	width:80px;
+    }
+}
+.btn {margin-bottom:10px !important;}
+.loader {
+	border: 10px solid #f3f3f3;
+	border-top: 10px solid #3498db; 
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	animation: spin 2s linear infinite;
+	margin: 0px auto;
+}
+.overlay {
+	height: 100%;
+	width: 100%;
+	position: fixed; 
+	z-index: 99999; 
+	left: 0;
+	top: 0;
+	background-color: rgb(0, 0, 0); 
+	background-color: rgba(0, 0, 0, 0.9); 
+	overflow-x: hidden; 
+	transition: 0.5s;
+}
+.overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%; 
+	text-align: center; 
+	margin-top: 30px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.btn {font-size: 1vw !important;}
