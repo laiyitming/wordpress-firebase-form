@@ -31,10 +31,7 @@ Wordpress plugins that enables you to create web form that  stores information i
 3. firebaseStub.php
 - Copy them in /firebase-forms/lib folder
 - We are using this API to approve and reject contest entries from admin side.
-- To deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software please go through Licence section of API first
-- Go to https://github.com/select2/select2/blob/master/LICENSE.md, find and download select2.min.js file then paste it in WordPress-Plugins/firebase-forms/js folder
-- Go to https://github.com/select2/select2/blob/master/LICENSE.md, find and download select2.min.css file then paste it in WordPress-Plugins/firebase-forms/css folder
- 
+- To deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software please go through Licence section of API first. 
 
 ### Used Technologies
 1. Google Firebase: Realtime database, firebase functions, Firebase storage
@@ -68,7 +65,10 @@ Wordpress plugins that enables you to create web form that  stores information i
 	4. For your referance we have added few forms whihc you can refer to add new
   - On admin side, we have added page using whihc you can add new contest and see all participated users.
   - For added sample contests we have considered 
-
+  - If you want to customize <select> dropdown using select2 lib to implement multiple select drop down you need to follow  two points below with some changes in form.js and form html
+  1. Go to https://github.com/select2/select2/blob/master/LICENSE.md, find and download select2.min.js file then paste it in WordPress-Plugins/firebase-forms/js folder
+  2. Go to https://github.com/select2/select2/blob/master/LICENSE.md, find and download select2.min.css file then paste it in WordPress-Plugins/firebase-forms/css folder
+	
 ## Workflow
   1. Add contest from admin, once you add contest you will get contest id whihc you need to configure in js file of form 
   2. When user submit form data will get stored to firebase node.
