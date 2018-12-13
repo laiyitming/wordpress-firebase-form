@@ -34,7 +34,7 @@ Wordpress plugins that enables you to create web form, that stores information i
 - To deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software please go through Licence section of API first. 
 
 ### Used Technologies
-1. Google Firebase: Realtime database, firebase functions, Firebase storage
+1. Google Firebase: Realtime Database, Firebase Functions, Firebase Storage
 2. AWS: IAM role, API Gateway, LAMBDA, Elastic Search
 
 # Create Contest Page
