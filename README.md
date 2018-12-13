@@ -2,11 +2,11 @@
 Wordpress plugins that enables you to create web form that  stores information in Firebase RealTime Database after user login thru FirebaseUI. It will then trigger Firebase Functions, to submit information to AWS Elastic Search thru AWS API Gateway and AWS Lambda.
 
 # Description
-  - Create realtime contest with wirdpress plugin, Google firebase[realtime database, Firebase functions, firebase storage], AWS [Iam, API gateway, LAMBDA, Elastic Search]
-  - To use this plugin you will have to open account on Google to use google products and on AWS to use amazon services as mentioned above.
-  - Also you will have to install firebase CLI to deploy firebase function on firebase.
+  - Create realtime contest with WordPress plugin, Google Firebase[realtime database, Firebase functions, firebase storage], AWS [IAM, API Gateway, LAMBDA, Elastic Search]
+  - To use this plugin you will have to open account on Google to use Google products and on AWS to use Amazon services as mentioned above.
+  - Also you will have to install Firebase CLI to deploy Firebase Function on Firebase.
   - On Google firebase side will need to have premium account as to call third party API's it is must.
-  - For firebase functions can refer to: https://firebase.google.com/docs/functions/get-started
+  - For Firebase Functions can refer to: https://firebase.google.com/docs/functions/get-started
   
 # Configuration need to configure in init_firebase.php file
 - Please change or initiate firebase application by configuring below mentioned parameters in \firebase-forms\lib\init_firebase.php
@@ -48,7 +48,7 @@ Wordpress plugins that enables you to create web form that  stores information i
 ```
   `[bootstrap_sidebar_navigation]` : Shortcode for sidebar navigation 
   `[firebase_form_shortcode]` : Shortcode for contest forms
-  `[firebase_contest_shortcode contest="-LHITRFgQimv9k6UzbYn"]` : Shortcode to show participated users, where contest is ID of contest whihc you can get from admin
+  `[firebase_contest_shortcode contest="-LHITRFgQimv9k6UzbYn"]` : Shortcode to show participated users, where contest is ID of contest which you can get from admin
   
 ### Required Plugin
   - We have created another plugin "bootstrap-sidebar-navigation" to show sidebar with links to diffrent pages of site
@@ -62,8 +62,8 @@ Wordpress plugins that enables you to create web form that  stores information i
     	1. form-{id}.php eq. form-2.php in folder /view/
 	2. form-{id}.js  eq. form-2.js in folder /js/
 	3. Similar to form you can add new header with file name headerlinks-{id}.php, eq. headerlinks-2.php 
-	4. For your referance we have added few forms whihc you can refer to add new
-  - On admin side, we have added page using whihc you can add new contest and see all participated users.
+	4. For your referance we have added few forms which you can refer to add new
+  - On admin side, we have added page using which you can add new contest and see all participated users.
   - For added sample contests we have considered 
     - If you want to customize Select Tag dropdown using select2 lib to implement multiple select drop down you need to follow  two points below with some changes in form.js and form html
   1. Go to https://github.com/select2/select2/blob/master/LICENSE.md, find and download select2.min.js file then paste it in WordPress-Plugins/firebase-forms/js folder
@@ -71,7 +71,7 @@ Wordpress plugins that enables you to create web form that  stores information i
 
 
 ## Workflow
-  1. Add contest from admin, once you add contest you will get contest id whihc you need to configure in js file of form 
+  1. Add contest from admin, once you add contest you will get contest id which you need to configure in js file of form 
   2. When user submit form data will get stored to firebase node.
   3. Once data write on firebase node firebase function will get trigger which will post same data to API gateway which will post it to Elastic Search
   4. After post data to Elastic search firebase function will copy data to main node and delete it from temporary node
