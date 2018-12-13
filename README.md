@@ -59,15 +59,15 @@ Wordpress plugins that enables you to create web form that  stores information i
 
 ### Customize Plugin Firbase Forms plugin
   - If you want to add new form or page you have to add two files
-    1. form-{id}.php eq. form-2.php in folder /view/
+    	1. form-{id}.php eq. form-2.php in folder /view/
 	2. form-{id}.js  eq. form-2.js in folder /js/
 	3. Similar to form you can add new header with file name headerlinks-{id}.php, eq. headerlinks-2.php 
 	4. For your referance we have added few forms whihc you can refer to add new
   - On admin side, we have added page using whihc you can add new contest and see all participated users.
   - For added sample contests we have considered 
   - If you want to customize <select> dropdown using select2 lib to implement multiple select drop down you need to follow  two points below with some changes in form.js and form html
-  1. Go to https://github.com/select2/select2/blob/master/LICENSE.md, find and download select2.min.js file then paste it in WordPress-Plugins/firebase-forms/js folder
-  2. Go to https://github.com/select2/select2/blob/master/LICENSE.md, find and download select2.min.css file then paste it in WordPress-Plugins/firebase-forms/css folder
+  	1. Go to https://github.com/select2/select2/blob/master/LICENSE.md, find and download select2.min.js file then paste it in WordPress-Plugins/firebase-forms/js folder
+  	2. Go to https://github.com/select2/select2/blob/master/LICENSE.md, find and download select2.min.css file then paste it in WordPress-Plugins/firebase-forms/css folder
 	
 ## Workflow
   1. Add contest from admin, once you add contest you will get contest id whihc you need to configure in js file of form 
@@ -75,7 +75,7 @@ Wordpress plugins that enables you to create web form that  stores information i
   3. Once data write on firebase node firebase function will get trigger which will post same data to API gateway which will post it to Elastic Search
   4. After post data to Elastic search firebase function will copy data to main node and delete it from temporary node
   5. On frontend side, shortcode [firebase_contest_shortcode contest="-LHITRFgQimv9k6UzbYn"] will fetch all participant data from elastic search and show on site
-  5. Note. If you want to change fields need to make changes in form javascript file, Firebase function code and LAMBDA function code
+  6. Note. If you want to change fields need to make changes in form javascript file, Firebase function code and LAMBDA function code
  
 ## Firebase Database Structure
 Node: 
