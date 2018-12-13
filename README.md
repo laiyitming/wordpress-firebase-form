@@ -32,6 +32,9 @@ Wordpress plugins that enables you to create web form that  stores information i
 - Copy them in /firebase-forms/lib folder
 - We are using this API to approve and reject contest entries from admin side.
 - To deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software please go through Licence section of API first
+- Go to https://github.com/select2/select2/blob/master/LICENSE.md, find and download select2.min.js file then paste it in WordPress-Plugins/firebase-forms/js folder
+- Go to https://github.com/select2/select2/blob/master/LICENSE.md, find and download select2.min.css file then paste it in WordPress-Plugins/firebase-forms/css folder
+ 
 
 ### Used Technologies
 1. Google Firebase: Realtime database, firebase functions, Firebase storage
