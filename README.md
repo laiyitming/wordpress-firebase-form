@@ -1,5 +1,5 @@
 # wordpress-firebase-form
-Wordpress plugins that enables you to create web form that  stores information in Firebase RealTime Database after user login thru FirebaseUI. It will then trigger Firebase Functions, to submit information to AWS Elastic Search thru AWS API Gateway and AWS Lambda   
+Wordpress plugins that enables you to create web form that  stores information in Firebase RealTime Database after user login thru FirebaseUI. It will then trigger Firebase Functions, to submit information to AWS Elastic Search thru AWS API Gateway and AWS Lambda.
 
 # Description
   - Create realtime contest with wirdpress plugin, Google firebase[realtime database, Firebase functions, firebase storage], AWS [Iam, API gateway, LAMBDA, Elastic Search]
@@ -22,6 +22,17 @@ Wordpress plugins that enables you to create web form that  stores information i
 - FIREBASE_AWS_API_SECRET: This constant will hold secret key to authenticate call with aws API
 - Refer to https://firebase.google.com/docs/web/setup for more information about setup application on google firebase.
 
+### Installation & Setup for PHP REST API
+- You can use PHP Firebase API to connect Firebase database in PHP using API suggested by Firebase https://firebase.google.com/docs/database/rest/start
+- We have used PHP API developed by Tamas Kalman
+- Go to https://github.com/ktamas77/firebase-php/, install or download below three files
+1. firebaseInterface.php
+2. firebaseLib.php
+3. firebaseStub.php
+- Copy them in /firebase-forms/lib folder
+- We are using this API to approve and reject contest entries from admin side.
+- To deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software please go through Licence section of API first
+
 ### Used Technologies
 1. Google Firebase: Realtime database, firebase functions, Firebase storage
 2. AWS: IAM role, API Gateway, LAMBDA, Elastic Search
@@ -38,7 +49,6 @@ Wordpress plugins that enables you to create web form that  stores information i
   `[bootstrap_sidebar_navigation]` : Shortcode for sidebar navigation 
   `[firebase_form_shortcode]` : Shortcode for contest forms
   `[firebase_contest_shortcode contest="-LHITRFgQimv9k6UzbYn"]` : Shortcode to show participated users, where contest is ID of contest whihc you can get from admin
-
   
 ### Required Plugin
   - We have created another plugin "bootstrap-sidebar-navigation" to show sidebar with links to diffrent pages of site
@@ -72,7 +82,6 @@ Node:
 	- wp_fb_tokens	: This node will include user device token which will be used as user login token
 	- wp_fb_users	: This node will include user related data like address, name and createdate
 	
-License
-----
+# License
 
-MIT
+Free to use
